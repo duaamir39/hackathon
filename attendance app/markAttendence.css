@@ -1,0 +1,332 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #333; /* Background color for the navbar */
+    color: white; /* Text color for the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-heading {
+    margin: 0;
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  .navbar-buttons {
+    display: flex;
+  }
+  
+  /* Button styles (adjust colors as needed) */
+  .button {
+    background-color: #3498db; /* Default button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-right: 10px; /* Adjust spacing between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+  }
+  
+  /* Button hover effect */
+  .button:hover {
+    background-color: #2980b9; /* Darker color on hover */
+  }
+  
+  /* Individual button colors */
+  .webdev {
+    background-color: #e74c3c;
+  }
+  
+  .AI {
+    background-color: #f39c12;
+  }
+  
+  .graphicDesigning {
+    background-color: #27ae60;
+  }
+  
+  .videoEditing {
+    background-color: #9b59b6;
+  }
+  
+  .digitalMarketing {
+    background-color: #3498db;
+  }
+  
+  .returnBtn {
+    background-color: #e67e22;
+  }
+  
+  .createStudent {
+    background-color: #2ecc71;
+  }
+
+  
+/* Updated styles for course title */
+.courseTitle {
+    text-align: center;
+    text-transform: capitalize; /* Capitalize text */
+    font-size: 28px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    padding: 10px;
+    background-color: #3498db; /* Background color */
+    color: white; /* Text color */
+  }
+  
+  /* Updated styles for date */
+  .date {
+    text-align: center;
+    font-size: 24px; /* Increase font size */
+    padding: 10px;
+    background-color: #e74c3c; /* Background color */
+    color: white; /* Text color */
+  }
+  
+  /* Add these styles to your CSS */
+
+/* Style the table */
+.studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 20%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Style table header */
+  .studentTable th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style table rows */
+  .studentTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style table cells */
+  .studentTable td {
+    padding: 20px;
+  }
+  
+  /* Style the Save and Edit buttons */
+  .studentTable button.submitBtn,
+  .studentTable button.editBtn {
+    font-size: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+
+  .studentTable button.editBtn {
+    background-color: #29b959;
+  }
+  
+  .studentTable button.submitBtn:hover,
+  .studentTable button.editBtn:hover {
+    background-color: #29b959;
+  }
+  .studentTable button.editBtn:hover {
+    background-color: #3498db;
+  }
+  
+.showStudents{
+    width:100%;
+    height: 100vh;
+}
+.studentRow{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.attendance{
+    width:50px;
+    height: 20px;
+
+}
+.emptyDiv{
+    width:100%;
+    height: 2px;
+    background-color: black;
+}
+
+.attendanceHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 80%;
+}
+
+.attendanceHeader p {
+    flex: 1; /* Distribute available space evenly among all elements */
+    text-align: center;
+    margin: 0;
+}
+.editInfoWork {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: #868282e7;
+}
+.editInfoWork h1{
+    margin: 10px;
+}
+.editInfoWork input[type="text"],
+.editInfoWork select,
+.editInfoWork button {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.done{
+    width: 150px;
+    height: 50px;
+    background-color: green;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Style the select element */
+select{
+    appearance: none; /* Remove default styling on some browsers */
+    -webkit-appearance: none; /* Remove default styling on WebKit browsers */
+    -moz-appearance: none; /* Remove default styling on Firefox */
+    background-color: #f2f2f2; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    padding: 10px; /* Spacing around content */
+    border-radius: 5px; /* Rounded corners */
+    width: 105px; /* Adjust width as needed */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  /* Style the dropdown arrow icon */
+  select::after {
+    content: '\25BC'; /* Unicode down arrow character */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Disable click events on the arrow */
+  }
+  
+  /* Style dropdown options (when opened) */
+  select option {
+    background-color: #fff; /* Background color for options */
+    color: #333; /* Text color for options */
+  }
+  
+  /* Style the select element when focused (clicked) */
+  select:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a shadow when focused */
+  }
+  
+  /* Style the form container */
+.editInfoWork {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #868282e7;
+  }
+  
+  /* Style the form card */
+  .form-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  /* Style the form input fields */
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #3498db; /* Add a bottom border */
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-bottom-color 0.3s; /* Add a smooth transition */
+  }
+  
+  /* Style the form input fields on focus */
+  .input:focus {
+    border-bottom-color: #29b959; /* Change border color on focus */
+  }
+  
+  /* Style the dropdown select */
+  .select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-bottom-color 0.3s;
+  }
+  
+  /* Style the dropdown select on focus */
+  .select:focus {
+    border-bottom-color: #29b959;
+  }
+  
+  /* Style the Done button */
+  .done-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #29b959; /* Green button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Style the Done button on hover */
+  .done-btn:hover {
+    background-color: #1e9959; /* Darker green on hover */
+  }
+  
+  
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="createStudent.css">
+    <title>create student |SMIT</title>
+</head>
+<body >
+  <div class="profile-body">
+    <header>
+        <h1>create a student | SMIT</h1>
+    </header>
+      <div class="input-container">
+        <div class="form">
+          <input type="text" class="studentName input" placeholder="student name">
+            <span class="input-border"></span>
+        </div>
+    </div>
+    
+    <div class="input-container">
+        <div class="form">
+          <input type="email" class="studentEmail input" placeholder="student email">
+            <span class="input-border"></span>
+        </div>
+    </div>
+
+    <div class="input-container">
+      <div class="form">
+          <select class="input" id="chooseCourse" required>
+              <option value="" disabled selected>Select Course Name</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Graphic Designing">Graphic Designing</option>
+              <option value="AI">AI</option>
+              <option value="Video Editing">Video Editing</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+          </select>
+          <span class="input-border"></span>
+      </div>
+  </div>
+
+  <div class="input-container">
+    <div class="form">
+        <select class="input batchNo" required>
+            <option value="" disabled selected>Select Batch Number</option>
+            <option value="Batch 1">Batch 1</option>
+            <option value="Batch 2">Batch 2</option>
+            <option value="Batch 3">Batch 3</option>
+            <option value="Batch 4">Batch 4</option>
+            <option value="Batch 5">Batch 5</option>
+            <option value="Batch 6">Batch 6</option>
+            <option value="Batch 7">Batch 7</option>
+        </select>
+        <span class="input-border"></span>
+    </div>
+</div>
+    <div class="input-container">
+        <button class="signin-btns color-r done">Done</button>
+        <button class="signin-btns color-s dashboard">dashboard</button>
+    </div>
+</div>
+</div>
+</div>
+      <script  type="module"  src="./config.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script  type="module"  src="./createStudent.js"></script>
+</body>
+</html>

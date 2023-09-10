@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body class="signup-body">
+
+    <div class="wrapper">
+        <form action="">
+          <h1 class="heading">Sign Up</h1>
+          <div class="input-boxs">
+            <input type="text" placeholder="First Name" required   id="firstName" >
+            <i class='bx bxs-user'></i>
+          </div>
+          <div class="input-boxs">
+            <input type="text" required  id="lastName" placeholder="Father Name">
+            <i class='bx bxs-user'></i>
+          </div>
+          <div class="input-boxs">
+            <input type="text" required  placeholder="Phone" required id="phone" >
+            <i class='bx bxs-phone'></i>
+          </div>
+          <div class="input-boxs">
+            <input type="text" placeholder="Email address" required id="email"/>
+            <i class='bx bxs-envelope'></i>
+          </div>
+          <div class="input-boxs">
+            <input type="password" placeholder="Password" required id="password">
+            <i class='bx bxs-lock-alt' ></i>
+          </div>
+          <input type="submit" class="btn" value="Signup" id="signupButton" />
+          <div class="register-link">
+            <button type="submit" class="btn" id="loginButton">login</button>
+          </div>
+        </form>
+      </div>
+   
+    <script type="module" src="./config.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./signup.js"></script>
+</body>
+</html>

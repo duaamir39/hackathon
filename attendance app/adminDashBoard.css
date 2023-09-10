@@ -1,0 +1,91 @@
+/* Apply a gradient background to the body */
+body {
+    background: linear-gradient(to top, #eb5757, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Style the card */
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    margin-left: 10%;
+  }
+  
+  /* Style the buttons with different colors */
+  .button-container {
+   margin-right: 10px;
+   font-size: 20px;
+   margin-bottom: 10px;
+   width: 100%;
+   height: auto;
+  }
+  
+  #createStudentButton {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #createClassButton {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #seeAllClassesButton {
+    background-color: #9b59b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #markAttendance {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+/* ====================AllClassesDiv================= */
+.AllClassesDiv{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.class-item {
+    text-transform: capitalize;
+    padding: 0 5px 15px 5px;
+    background-color: #9b59b6;
+    color: #fff;
+    border: 1px solid #9b59b6;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 45%;
+    height: 230px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+button{
+    margin: 0px 10px;
+}

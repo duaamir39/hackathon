@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./markAttendence.css" />
+    <title>mark attendance</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="navbar-heading">Student Attendance</h1>
+      <div class="navbar-buttons">
+        <button class="button webdev">Web Development</button>
+        <button class="button AI">AI</button>
+        <button class="button graphicDesigning">Graphic Designing</button>
+        <button class="button videoEditing">Video Editing</button>
+        <button class="button digitalMarketing">Digital Marketing</button>
+        <button class="button returnBtn">Return to Dashboard</button>
+        <button class="button createStudent">Create New Student</button>
+      </div>
+    </nav>
+    <h1 class="courseTitle"></h1>
+    <div class="date"></div>
+    
+      <div class="showStudents studentTable"></div>
+   
+    
+    <!-- edit info -->
+    <div class="editInfoWork">
+      <div class="form-card">
+        <h1>Change Student's Info</h1>
+        <div class="input-container">
+          <input type="text" class="input" id="name" name="name" required placeholder="Change Name" />
+        </div>
+    
+        <div class="input-container">
+          <input type="text" class="input" id="batchNo" name="batchNo" required placeholder="Change Batch No" />
+        </div>
+    
+        <div class="input-container">
+          <select class="select" id="chooseCourse">
+            <option value="" disabled selected>Select Course Name</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Graphic Designing">Graphic Designing</option>
+            <option value="AI">AI</option>
+            <option value="Video Editing">Video Editing</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+          </select>
+        </div>
+    
+        <div class="input-container">
+          <button class="done-btn done">Done</button>
+        </div>
+      </div>
+    </div>
+    
+  
+
+    <script type="module" src="./config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./markAttendence.js"></script>
+  </body>
+</html>
